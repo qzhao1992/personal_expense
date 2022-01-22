@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import './widgets/new_transaction.dart';
-import './widgets/transaction_list.dart';
+import './widgets/user_transactions.dart';
 
 import './models/transaction.dart';
 
@@ -41,8 +39,7 @@ class MyHomePage extends StatelessWidget {
               elevation: 5,
             ),
           ),
-          NewTransaction(),
-          TransactionList(),
+          UserTransactions(),
         ],
       ),
     );
