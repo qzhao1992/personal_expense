@@ -16,7 +16,7 @@ class Chart extends StatelessWidget {
           totalSum += recentTransactions[i].amount;
         }
       }
-      return {'day': DateFormat.E(weekDay), 'amount': 9.99};
+      return {'day': DateFormat.E().format(weekDay).substring(0,1), 'amount': totalSum};
     });
   }
   @override
